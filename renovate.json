@@ -6,7 +6,6 @@
   "dependencyDashboard": true,
   "timezone": "Asia/Tokyo",
   "schedule": [
-    "after 0:00am on saturday",
-    "before 1:00am on saturday"
+    "after 00:20am on saturday"
   ]
 }
