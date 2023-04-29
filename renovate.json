@@ -8,7 +8,7 @@
   "dependencyDashboard": true,
   "timezone": "Asia/Tokyo",
   "schedule": [
-    "after 00:30am on sunday"
+    "after 00:00am on sunday"
   ],
   "enabledManagers": [
     "gomod"
