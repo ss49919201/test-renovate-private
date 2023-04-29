@@ -1,0 +1,26 @@
+name: CI
+on:
+  pull_request:
+    branches: [ main ]
+jobs:
+  golangci-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out
+        uses: actions/checkout@v3
+
+      - name: run golangci-lint
+        uses: reviewdog/action-golangci-lint@v2
+  go-std-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out
+        uses: actions/checkout@v3
+
+      - name: setup Go
+        uses: actions/setup-go@v3
+        with:
+          go-version-file: 'go.mod'
+
+      - name: run test
+        run: go test -v ./...
