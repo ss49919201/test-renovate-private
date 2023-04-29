@@ -4,6 +4,7 @@
     "config:base",
     ":automergeMinor"
   ],
+  "platformAutomerge": true,
   "dependencyDashboard": true,
   "timezone": "Asia/Tokyo",
   "schedule": [
